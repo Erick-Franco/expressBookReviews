@@ -1,0 +1,2 @@
+theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ curl -X POST http://localhost:5000/register -H "Content-Type: application/json" -d "{\"username\":\"nuevouser\",\"password\":\"mipassword\"}"
+{"message":"User successfully registered. Now you can login"}theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ 

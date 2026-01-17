@@ -1,0 +1,14 @@
+theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ curl -X POST http://localhost:5000/customer/login -H "Content-Type: application/json" -d "{\"username\":\"testuser\",\"password\":\"testpass123\"}" -c cookies.txt
+{"message":"User successfully logged in","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiaWF0IjoxNzY4NjIzMzQ0LCJleHAiOjE3Njg2MjY5NDR9.oD0LgNMVgZB7iLY3i-7wgFuiUEnATJjS6yRXR3JN5f4"}theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ 
+theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ curl -X PUT http://localhost:5000/customer/auth/review/1?review=ExcelenteLibro -b cookies.txt
+{"message":"Review successfully added/updated","reviews":{"testuser":"ExcelenteLibro"}}theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ 
+theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ curl -X PUT http://localhost:5000/customer/auth/review/1?review=MejorLibroDelMundo -b cookies.txt
+{"message":"Review successfully added/updated","reviews":{"testuser":"MejorLibroDelMundo"}}theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ 
+theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ curl http://localhost:5000/review/1
+{
+    "testuser": "MejorLibroDelMundo"
+}theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ 
+theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ 
+theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ curl -X PUT http://localhost:5000/customer/auth/review/1?review=SinAuth
+Unauthorizedtheia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ 
+theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ 

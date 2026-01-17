@@ -1,0 +1,2 @@
+theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ curl -X POST http://localhost:5000/customer/login -H "Content-Type: application/json" -d "{\"username\":\"testuser\",\"password\":\"testpass123\"}" -c cookies.txt
+{"message":"User successfully logged in","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiaWF0IjoxNzY4NjIyODM3LCJleHAiOjE3Njg2MjY0Mzd9.jTA8G7G8KxYWTERbpTHDS3hehE7_jxK6rZcj_TcD19Q"}theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ 

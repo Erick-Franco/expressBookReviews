@@ -1,0 +1,8 @@
+theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ curl http://localhost:5000/title/Things%20Fall%20Apart
+[
+    {
+        "author": "Chinua Achebe",
+        "title": "Things Fall Apart",
+        "reviews": {}
+    }
+]theia@theia-rrickquispe:/home/project/expressBookReviews/final_project$ 
